@@ -17,7 +17,8 @@ import lombok.NoArgsConstructor;
 
 public class Payment {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId;
     private Long loanId;
-    private Long paymentAmount;
+    private Integer paymentAmount;
 }
