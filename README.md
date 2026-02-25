@@ -19,7 +19,7 @@ The system tracks loan balances and statuses, providing a RESTful API for loan a
 ## Technologies Used
 
 - **Java 21**
-- **Spring Boot 4.0.3**
+- **Spring Boot 3.4.0**
 - **Spring Data JPA**
 - **Spring Web MVC**
 - **H2 Database**
@@ -29,7 +29,7 @@ The system tracks loan balances and statuses, providing a RESTful API for loan a
 ## Prerequisites
 
 - Java 21 
-- Maven 3.6
+- Maven 3.6+
 
 ## Installation
 
@@ -41,14 +41,14 @@ The system tracks loan balances and statuses, providing a RESTful API for loan a
 
 2. Build the project:
    ```bash
-   mvn clean install
+   ./mvnw clean install
    ```
 
 ## Running the Application
 
 1. Start the application:
    ```bash
-   mvn spring-boot:run
+   ./mvnw spring-boot:run
    ```
 
 2. The application will start on `http://localhost:8080`
@@ -83,7 +83,7 @@ The application uses an in-memory H2 database. You can access the H2 console at:
 
 Run the tests using Maven:
 ```bash
-mvn test
+./mvnw test
 ```
 
 ## Configuration
