@@ -1,16 +1,16 @@
 package com.bx.loanpaymentsystem.loan.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
 
 @Entity
 @Data
+@Getter
+@Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 
 public class Loan {
     @Id
@@ -19,5 +19,8 @@ public class Loan {
     private Integer loanAmount;
     private Integer loanBalance;
     private Integer term;
-    private LoanStatus status;
+
+    @Enumerated(EnumType.STRING)
+    @Builder.Default
+    private LoanStatus status =  LoanStatus.ACTIVE;
 }

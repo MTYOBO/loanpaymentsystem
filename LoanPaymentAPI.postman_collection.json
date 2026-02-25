@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "8ca35a7d-3759-4118-94cc-86c9b26cb4b7",
+		"name": "LoanPaymentAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26948378",
+		"_collection_link": "https://galactic-meteor-930115.postman.co/workspace/Arduino~f7b93b1b-f0c0-4774-a456-6929ddfff50b/collection/26948378-8ca35a7d-3759-4118-94cc-86c9b26cb4b7?action=share&source=collection_link&creator=26948378"
+	},
+	"item": [
+		{
+			"name": "Create Loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"loanAmount\"  : 1000 ,\n    \"term\" : 8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/loans/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Loan Details",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PayLoan",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

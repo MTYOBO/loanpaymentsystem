@@ -5,7 +5,6 @@ import com.bx.loanpaymentsystem.loan.entity.LoanStatus;
 import com.bx.loanpaymentsystem.loan.service.LoanService;
 import com.bx.loanpaymentsystem.payment.entity.Payment;
 import com.bx.loanpaymentsystem.payment.repository.PaymentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service

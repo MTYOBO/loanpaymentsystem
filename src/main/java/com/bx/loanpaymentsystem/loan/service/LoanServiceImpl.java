@@ -14,11 +14,17 @@ public class LoanServiceImpl implements LoanService {
 
     @Override
     public Loan saveLoanDetails(Loan loan) {
+        if (loan == null) {
+            throw new IllegalArgumentException("Loan cannot be null");
+        }
         return loanPaymentRepository.save(loan);
     }
 
     @Override
     public Loan retreiveLoan(Long loanId) {
+        if (loanId == null) {
+            throw new IllegalArgumentException("Loan ID cannot be null");
+        }
         return loanPaymentRepository.findById(loanId).orElse(null);
     }
 }

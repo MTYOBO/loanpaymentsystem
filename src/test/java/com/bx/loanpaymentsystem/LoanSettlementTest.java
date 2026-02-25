@@ -1,6 +1,5 @@
 package com.bx.loanpaymentsystem;
 
-import com.bx.loanpaymentsystem.payment.service.PaymentService;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -11,10 +10,8 @@ import com.bx.loanpaymentsystem.payment.entity.Payment;
 import com.bx.loanpaymentsystem.payment.repository.PaymentRepository;
 import com.bx.loanpaymentsystem.payment.service.PaymentServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
